@@ -38,9 +38,6 @@ body{
 }
 
 .image{
-    filter: grayscale(.5);
-    filter: opacity(1);
-
 }
 
 

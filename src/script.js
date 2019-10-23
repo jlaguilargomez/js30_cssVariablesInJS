@@ -20,17 +20,17 @@ border.addEventListener('mouseup', function(){
 // Color modifying
 
 blur.addEventListener('mouseup', function(){
-    image.style.filter = `blur(${blur.value}px)`;
+    image.style.filter = `blur(${blur.value}px) opacity(${opacity.value}) grayscale(${grayscale.value})`;
     console.log(blur.value);
 });
 
 opacity.addEventListener('mouseup', function(){
-    image.style.filter = `opacity(${opacity.value})`;
+    image.style.filter = `blur(${blur.value}px) opacity(${opacity.value}) grayscale(${grayscale.value})`;
     console.log(opacity.value);
 });
 
 grayscale.addEventListener('mouseup', function(){
-    image.style.filter = `grayscale(${grayscale.value})`;
+    image.style.filter = `blur(${blur.value}px) opacity(${opacity.value}) grayscale(${grayscale.value})`;
     console.log(grayscale.value);
 });
 
