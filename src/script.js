@@ -1,5 +1,5 @@
 // From DOM to JS
-const border = document.getElementById('border-range');
+const border = document.getElementById('border');
 const borderRadius = document.getElementById('borderradius-range');
 const borderColor = document.getElementById('bordercolor-range');
 const blur = document.getElementById('blur-range');
@@ -11,9 +11,20 @@ const image = document.getElementById('image');
 
 // Modifiying CSS variables
 
-border.addEventListener('mouseup', function(){
-    image.style.border = `${border.value}px solid white`;
+border.addEventListener('change', function(){
+    image.style.borderWidth = `${border.value}px`;
     console.log(border.value);
+});
+
+
+borderRadius.addEventListener('change', function(){
+    image.style.borderRadius= `${borderRadius.value}px`;
+    console.log(borderRadius.value);
+});
+
+borderColor.addEventListener('change', function(){
+    image.style.borderColor = `${borderColor.value}`;
+    console.log(borderColor.value);
 });
 
 
